@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blocks", "Blocks", "{39EAE4C7-E2BE-4A42-9536-F33BE58E09E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A7C2454E-AB7C-434D-8BA9-8A634F375CE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{7EA47DB9-0193-4D3F-98E5-3249FB4B01D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search.Api", "Services\Search.Api\Search.Api.csproj", "{7E7F73A6-B32F-42DE-8966-672F2F5C4067}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{FB59F201-7885-440F-963C-ABB6A0A07B3B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{982070B9-48C1-465F-A8CB-A2FCA96B0CB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{B18E25A8-01B9-4670-8664-E2CCEA0316F7}"
+	ProjectSection(SolutionItems) = preProject
+		Blocks\Database\Dockerfile = Blocks\Database\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{03D9C459-7096-42F9-948F-030FB140050C}"
+	ProjectSection(SolutionItems) = preProject
+		Blocks\Database\Scripts\configure-db.sh = Blocks\Database\Scripts\configure-db.sh
+		Blocks\Database\Scripts\entrypoint.sh = Blocks\Database\Scripts\entrypoint.sh
+		Blocks\Database\Scripts\setup.sql = Blocks\Database\Scripts\setup.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search.Domain", "Search.Domain", "{D1C0B5B6-586B-4EDF-A15E-9FFBE1029AAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search.Domain", "Services\Search.Domain\Search.Domain\Search.Domain.csproj", "{F2104C0B-25AF-498C-BB1B-6868314267C3}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Search.Web", "Web\Search.Web\Search.Web.esproj", "{854BF964-C5BC-4363-B5C2-AF356C07AC8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E7F73A6-B32F-42DE-8966-672F2F5C4067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7F73A6-B32F-42DE-8966-672F2F5C4067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7F73A6-B32F-42DE-8966-672F2F5C4067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7F73A6-B32F-42DE-8966-672F2F5C4067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982070B9-48C1-465F-A8CB-A2FCA96B0CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982070B9-48C1-465F-A8CB-A2FCA96B0CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982070B9-48C1-465F-A8CB-A2FCA96B0CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982070B9-48C1-465F-A8CB-A2FCA96B0CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2104C0B-25AF-498C-BB1B-6868314267C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2104C0B-25AF-498C-BB1B-6868314267C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2104C0B-25AF-498C-BB1B-6868314267C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2104C0B-25AF-498C-BB1B-6868314267C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E7F73A6-B32F-42DE-8966-672F2F5C4067} = {FB59F201-7885-440F-963C-ABB6A0A07B3B}
+		{FB59F201-7885-440F-963C-ABB6A0A07B3B} = {A7C2454E-AB7C-434D-8BA9-8A634F375CE5}
+		{B18E25A8-01B9-4670-8664-E2CCEA0316F7} = {39EAE4C7-E2BE-4A42-9536-F33BE58E09E4}
+		{03D9C459-7096-42F9-948F-030FB140050C} = {B18E25A8-01B9-4670-8664-E2CCEA0316F7}
+		{D1C0B5B6-586B-4EDF-A15E-9FFBE1029AAF} = {A7C2454E-AB7C-434D-8BA9-8A634F375CE5}
+		{F2104C0B-25AF-498C-BB1B-6868314267C3} = {D1C0B5B6-586B-4EDF-A15E-9FFBE1029AAF}
+		{854BF964-C5BC-4363-B5C2-AF356C07AC8A} = {7EA47DB9-0193-4D3F-98E5-3249FB4B01D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF8C12A8-49D8-47D5-87F9-E0ED9CAF3A93}
+	EndGlobalSection
+EndGlobal

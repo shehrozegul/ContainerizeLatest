@@ -1,0 +1,58 @@
+name: dockercompose11776289208656807982
+services:
+  angular-app:
+    build:
+      context: D:\InterviewAssesment\FlyDubai\AssesmentProject1\src
+      dockerfile: Web/Search.Web/Dockerfile
+      args:
+        skip_client_build: "true"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      NG_DEV_SERVER: http://angular.app:4200
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 4200
+        published: "4200"
+        protocol: tcp
+  search.api:
+    build:
+      context: D:\InterviewAssesment\FlyDubai\AssesmentProject1\src
+      dockerfile: Services/Search.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: searchapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  sqlserver:
+    build:
+      context: D:\InterviewAssesment\FlyDubai\AssesmentProject1\src
+      dockerfile: Blocks/Database/Dockerfile
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: pass@1234
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: sqlserver
+        target: /var/opt/bin/mssql
+        volume: {}
+networks:
+  default:
+    name: dockercompose11776289208656807982_default
+volumes:
+  sqlserver:
+    name: dockercompose11776289208656807982_sqlserver

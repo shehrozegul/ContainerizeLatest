@@ -1,0 +1,12 @@
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\bin\Debug\net8.0\Search.Domain.deps.json
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\bin\Debug\net8.0\Search.Domain.dll
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\bin\Debug\net8.0\Search.Domain.pdb
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.csproj.AssemblyReference.cache
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.AssemblyInfoInputs.cache
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.AssemblyInfo.cs
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.csproj.CoreCompileInputs.cache
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.dll
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\refint\Search.Domain.dll
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\Search.Domain.pdb
+D:\InterviewAssesment\FlyDubai\AssesmentProject1\src\Services\Search.Domain\Search.Domain\obj\Debug\net8.0\ref\Search.Domain.dll

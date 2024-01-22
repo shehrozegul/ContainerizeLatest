@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  sqlserver:
+    build:
+      context: .
+      dockerfile: Blocks/Database/Dockerfile
+
+  search.api:
+    image: ${DOCKER_REGISTRY-}searchapi
+    build:
+      context: .
+      dockerfile: Services/Search.Api/Dockerfile
+
+  angular-app:
+     build:
+       context: .
+       dockerfile: Web/Search.Web/Dockerfile

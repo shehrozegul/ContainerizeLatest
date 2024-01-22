@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+    sqlserver:
+        container_name: sqlserver
+        environment:
+          - SA_PASSWORD=pass@1234
+          - ACCEPT_EULA=Y
+        ports:
+          - "1433:1433"
+        volumes:
+          - sqlserver:/var/opt/bin/mssql
+
+    search.api:
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - ASPNETCORE_HTTP_PORTS=8080
+        ports:
+          - "8080"
+    angular-app:
+      environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - NG_DEV_SERVER=http://angular.app:4200
+      build:
+        args:
+         - skip_client_build=true
+        context: .
+      ports:
+         - "4200:4200"
+
+volumes: 
+    sqlserver:
